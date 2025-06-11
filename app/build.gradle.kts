@@ -7,8 +7,8 @@ android {
     namespace = "android.lucasaraujo.preferenciasdousuario"
     compileSdk = 35
 
-    viewBinding {
-        enabled = true
+    buildFeatures {
+        viewBinding = true
     }
 
     defaultConfig {

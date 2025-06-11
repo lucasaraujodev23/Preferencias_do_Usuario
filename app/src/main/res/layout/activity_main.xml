@@ -1,41 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <LinearLayout
+    android:background="@drawable/bg_btn"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:backgroundTint="@color/white"
+    android:id="@+id/layout_principal">
+    
+    <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
-        <Button android:id="@+id/cor1"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="20dp"/>
+        <LinearLayout android:id="@+id/horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white">
+    
+            <androidx.appcompat.widget.AppCompatButton android:id="@+id/cor1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:backgroundTint="#D70000"
+                android:background="@drawable/bg_btn"
+                android:contentDescription="Vermelho"/>
+    
+            <androidx.appcompat.widget.AppCompatButton android:id="@+id/cor2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:backgroundTint="#3F51B5"
+                android:background="@drawable/bg_btn"
+                android:contentDescription="Azul"/>
+    
+            <androidx.appcompat.widget.AppCompatButton android:id="@+id/cor3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:backgroundTint="#4CAF50"
+                android:background="@drawable/bg_btn"
+                android:contentDescription="Verde"/>
+    
+            <androidx.appcompat.widget.AppCompatButton android:id="@+id/cor4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:backgroundTint="#E300FB"
+                android:background="@drawable/bg_btn"
+                android:contentDescription="Rosa"/>
+    
+            <androidx.appcompat.widget.AppCompatButton android:id="@+id/cor5"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:backgroundTint="#FFE500"
+                android:background="@drawable/bg_btn"
+                android:contentDescription="Amarelo"/>
 
-        <Button android:id="@+id/cor2"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="20dp"/>
+        </LinearLayout>
 
-        <Button android:id="@+id/cor3"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="20dp"/>
+    </HorizontalScrollView>
 
-        <Button android:id="@+id/cor4"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="20dp"/>
+    <androidx.appcompat.widget.AppCompatButton android:id="@+id/btnTrocar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trocar Cor de Fundo"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_btn_black"
+        android:backgroundTint="@color/black"
+        android:layout_margin="20dp"
+        android:textAllCaps="false"/>
 
-        <Button android:id="@+id/cor5"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_margin="20dp"/>
-
-    </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
